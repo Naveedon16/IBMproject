@@ -5,7 +5,7 @@ const products = [
   {
     id: 1,
     title: "SAMSUNG",
-    Text: 1029,
+    price: 500,
     colors: [
       {
         code: "black",
@@ -21,7 +21,7 @@ const products = [
   {
     id: 2,
     title: "IPHONE",
-    price: 1099,
+    price: 550,
     colors: [
       {
         code: "silver",
@@ -36,7 +36,7 @@ const products = [
   {
     id: 3,
     title: "GOOGLE PIXEL",
-    price:"₹89999",
+    price:499,
     colors: [
       {
         code: "gray",
@@ -51,7 +51,7 @@ const products = [
   {
     id: 4,
     title: "ONEPLUS",
-    price: 79999,
+    price: 399,
     colors: [
       {
         code: "green",
