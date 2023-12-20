@@ -37,7 +37,7 @@ const products = [
   {
     id: 3,
     title: "GOOGLE PIXEL",
-    price:"₹89999",
+    price:999,
     colors: [
       {
         code: "gray",
@@ -52,7 +52,7 @@ const products = [
   {
     id: 4,
     title: "ONEPLUS",
-    price: 79999,
+    price: 799,
     colors: [
       {
         code: "green",
