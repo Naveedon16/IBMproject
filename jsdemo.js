@@ -1,4 +1,3 @@
-
 const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
 
@@ -37,7 +36,7 @@ const products = [
   {
     id: 3,
     title: "GOOGLE PIXEL",
-    price:999,
+    price: 999,
     colors: [
       {
         code: "gray",
@@ -65,14 +64,14 @@ const products = [
     ],
   },
 ];
+const data = JSON.parse(localStorage.getItem('id'));
+console.log(data);
 
-let choosenProduct = products[0];
 
 const currentProductImg = document.querySelector(".productImg");
 const currentProductTitle = document.querySelector(".productTitle");
 const currentProductPrice = document.querySelector(".productPrice");
 const currentProductColors = document.querySelectorAll(".color");
-const currentProductSizes = document.querySelectorAll(".size");
 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
@@ -93,17 +92,6 @@ menuItems.forEach((item, index) => {
 currentProductColors.forEach((color, index) => {
   color.addEventListener("click", () => {
     currentProductImg.src = choosenProduct.colors[index].img;
-  });
-});
-
-currentProductSizes.forEach((size, index) => {
-  size.addEventListener("click", () => {
-    currentProductSizes.forEach((size) => {
-      size.style.backgroundColor = "white";
-      size.style.color = "black";
-    });
-    size.style.backgroundColor = "black";
-    size.style.color = "white";
   });
 });
 
